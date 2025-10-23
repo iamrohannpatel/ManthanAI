@@ -4,7 +4,6 @@ import { Toaster } from 'react-hot-toast'
 import { AuthProvider } from './context/AuthContext'
 import { ThemeProvider } from './context/ThemeContext'
 import Layout from './components/layout/Layout'
-import Home from './pages/Home'
 import HomePage from './pages/HomePage'
 import Dashboard from './pages/Dashboard'
 import AboutPage from './pages/AboutPage'
@@ -85,7 +84,6 @@ function App() {
               <Suspense fallback={<LoadingSpinner />}>
                 <Routes>
                   <Route path="/" element={<HomePage />} />
-                  <Route path="/home" element={<Home />} />
                   <Route path="/dashboard" element={<Dashboard />} />
                   <Route path="/about" element={<AboutPage />} />
                   <Route path="/learn-more" element={<LearnMorePage />} />

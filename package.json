@@ -3,5 +3,9 @@
     "@vitejs/plugin-react": "^5.0.4",
     "express": "^5.1.0",
     "vite": "^7.1.10"
+  },
+  "scripts": {
+    "postinstall": "cd manthan-ai-app && npm install",
+    "dev": "npm run dev --prefix manthan-ai-app"
   }
 }
